@@ -4,6 +4,7 @@ const users = require('../../data/users')
 const UserResolver = {
   Query: {
     users: () => {
+      console.log('--------users');
       return users
     },
     getSingleUser: (_, args, context, info) => {
@@ -14,6 +15,8 @@ const UserResolver = {
   },
   Mutation: {
     addUser: (_, args) => {
+      console.log('---------masuk mutation');
+
       const newUser = {
         name: args.user.name,
         age: args.user.age

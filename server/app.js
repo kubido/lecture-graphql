@@ -8,6 +8,6 @@ const app = express();
 server.applyMiddleware({ app, path: '/entertainme' });
 
 
-app.listen({ port: 3000 }, () =>
-  console.log(`🚀 Server ready at http://localhost:3000${server.graphqlPath}`)
+app.listen({ port: 3001 }, () =>
+  console.log(`🚀 Server ready at http://localhost:3001${server.graphqlPath}`)
 );
